@@ -53,9 +53,6 @@ if [ -z "$pidfile" ]; then
     echo "Daemon pidfile path argument is required";
     show_help;
     exit 1;
-elif [ ! -f "$pidfile" ]; then
-    echo "Daemon pidfile does not exists";
-    exit 1;
 fi
 
 if [ -z "$command" ]; then
